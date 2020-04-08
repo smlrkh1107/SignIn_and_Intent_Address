@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".EditAdressActivity"></activity>
         <activity android:name=".EditNameActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,12 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MyPageActivity" />
-        <!-- 액티비티 추가되면~~ 액티비티가 추가되는게 보이니~~? -->
+        <activity android:name=".MyPageActivity" /> <!-- 액티비티 추가되면~~ 액티비티가 추가되는게 보이니~~? -->
         <!-- 뭐가먼저 실행될 것 같니 ??? intent-Filter가 들어가있는거 먼저 실행된단다 -->
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
