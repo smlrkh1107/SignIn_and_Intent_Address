@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
            //다음버튼 누르면 인텐트로~~ 여기서부터 class자바
            val myIntent = Intent(this, MyPageActivity::class.java)
-           startActionMode(myIntent)
+           startActivity(myIntent)
         }
 
     }

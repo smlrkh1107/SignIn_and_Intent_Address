@@ -4,14 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyPageActivity"
-    android:orientation="vertical">
+    tools:context=".EditNameActivity">
 
-    <TextView
-        android:id="@+id/userNameText"
-        android:layout_marginTop="15dp"
+    <EditText
+        android:id="@+id/nameEdt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="내 정보 화면"/>
+        android:hint="당신의 이름을 적어주세요"
+        android:singleLine="true"/>
+    <Button
+        android:id="@+id/nameOkBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"/>
+
+
 
 </LinearLayout>
