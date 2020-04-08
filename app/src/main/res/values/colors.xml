@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#6200EE</color>
+<!--    제목 줄 색깔-->
     <color name="colorPrimaryDark">#3700B3</color>
+<!--    상단 상태표시줄 색-->
     <color name="colorAccent">#03DAC5</color>
+<!--    선택된 버튼, 활성화된 글씨치는 창 아래 컬러를 의미-->
 </resources>
