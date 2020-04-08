@@ -7,6 +7,13 @@
     android:paddingBottom="15dp"
     android:background="#DADADA">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,7 +45,7 @@
                 android:textColor="#000000"
                 android:textSize="17sp"
                 android:textStyle="bold"/>
-<!--            두 객체 사이에 빈 text넣고 1넣으면 벌려지나봐-->
+            <!--            두 객체 사이에 빈 text넣고 1넣으면 벌려지나봐-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -46,42 +53,42 @@
                 android:text="사용 가능한 이메일 입니다."
                 android:textColor="#2767e3" />
         </LinearLayout>
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:orientation="horizontal">-->
-<!--        <EditText-->
-<!--            android:layout_weight="1"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="이메일"-->
-<!--            android:inputType="textEmailAddress"/>-->
-<!--        <Button-->
-<!--            android:layout_margin="2dp"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="중복확인"/>-->
-<!--        </LinearLayout>-->
-<!-- 강사님은 이 버튼을 FrameLayout을 쓰네,,-->
-            <FrameLayout
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal">-->
+        <!--        <EditText-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="이메일"-->
+        <!--            android:inputType="textEmailAddress"/>-->
+        <!--        <Button-->
+        <!--            android:layout_margin="2dp"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="중복확인"/>-->
+        <!--        </LinearLayout>-->
+        <!-- 강사님은 이 버튼을 FrameLayout을 쓰네,,-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:paddingRight="26dp"
+            android:paddingLeft="26dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="41dp">                >
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#FFFFFF"
-                android:paddingRight="26dp"
-                android:paddingLeft="26dp"
-                android:paddingTop="8dp"
-                android:paddingBottom="41dp">                >
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="이메일"
-                    android:inputType="textEmailAddress"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:text="중복확인"/>
-            </FrameLayout>
+                android:hint="이메일"
+                android:inputType="textEmailAddress"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="중복확인"/>
+        </FrameLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -113,14 +120,14 @@
                 android:textSize="17sp"
                 android:textStyle="bold"/>
         </LinearLayout>
-    <EditText
-        android:layout_marginTop="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="특수문자를 포함한 8자리"
-        android:inputType="textPassword"/>
-     <LinearLayout
-         android:layout_marginTop="33dp"
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="특수문자를 포함한 8자리"
+            android:inputType="textPassword"/>
+        <LinearLayout
+            android:layout_marginTop="33dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -148,8 +155,63 @@
             android:inputType="textPassword"/>
     </LinearLayout>
 
-
-
+    <LinearLayout
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="36dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_margin="2dp"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:src="@drawable/image"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="근무가능 시간"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <RadioGroup
+            android:layout_marginTop="27dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_marginRight="47dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="풀타임"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="파트타임(재직중)"/>
+        </RadioGroup>
+        <Button
+            android:layout_marginTop="56dp"
+            android:layout_marginBottom="31dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다음"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
 </LinearLayout>
 
 
+    </ScrollView>
+</LinearLayout>
+
+<!--작성된 길이가 너무 길어 잘린다....!-->
