@@ -15,7 +15,7 @@ class MyPageActivity : AppCompatActivity() {
 
         val age = intent.getIntExtra("userAge", 0)
         // ★★intenger는 값을 받아오지 않으면 Default를 꼭 ★ 정해줘야 해, string은 null들어가
-        userNameText.text = "${name}님,  ${age}세"
+        userNameText.text = "${name}  ${age}"
 
 
     }

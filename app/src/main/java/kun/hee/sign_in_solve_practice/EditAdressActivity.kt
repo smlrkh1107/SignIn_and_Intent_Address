@@ -23,7 +23,8 @@ class EditAdressActivity : AppCompatActivity() {
             resultIntent.putExtra("detailAddress", detailAddressEdt.text.toString())
 
             setResult(Activity.RESULT_OK, resultIntent)
-            //완료버튼을 눌렀다는 뜻
+            //완료버튼을 눌렀다는 뜻 ==>  resultIntent 없어도돌아가긴하눈ㄷ,,
+            //취소가디폴트니, RESULT_OK해야 확인인것
 
 
             //결과 세팅이 끝났으니 화면 종료

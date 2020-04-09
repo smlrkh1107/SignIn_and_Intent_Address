@@ -17,7 +17,7 @@ class EditNameActivity : AppCompatActivity() {
         setContentView(R.layout.activity_edit_name)
 
 
-        detailAddressBtn.setOnClickListener {
+        inputAdressBtn.setOnClickListener {
             val myIntent = Intent(this, EditAdressActivity::class.java)
             startActivityForResult(myIntent, REQ_FOR_ADDRESS)
             //결과받는거
